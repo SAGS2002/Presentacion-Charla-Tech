@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Defensa Técnica - AdminMe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Estilos de Reveal.js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/black.min.css" id="theme">
+
+    <!-- Fuentes y Estilos Personalizados -->
+    <style>
+        :root {
+            --primary: #7C3AED;
+            --text: #e0e0e0;
+        }
+
+        .admin-me {
+            color: #7C3AED;
+            font-weight: 900;
+        }
+
+        .white {
+            color: #ffffff;
+        }
+
+        .badge-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .code-box {
+            background: #1e1e1e;
+            border-radius: 8px;
+            padding: 20px;
+            font-family: 'Fira Code', monospace;
+            text-align: left;
+            font-size: 0.55em;
+            border: 1px solid #333;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            line-height: 1.5;
+        }
+
+        .highlight {
+            color: #10B981;
+        }
+
+        .error {
+            color: #EF4444;
+        }
+
+        .big-icon {
+            font-size: 3em;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .card {
+            background: #1a1a1a;
+            padding: 20px;
+            border-radius: 15px;
+            border: 1px solid #333;
+            flex: 1;
+            margin: 0 10px;
+        }
+
+        .flex-row {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="reveal">
+        <div class="slides">
+
+            <!-- SLIDE 1: PORTADA (KEYNOTE) -->
+            <section>
+                <h4 style="color: #888; letter-spacing: 3px; font-size: 0.6em;">IUTEPI TECH TALKS 2025</h4>
+                <h1 class="r-fit-text">EL PODER DEL <br><span class="admin-me">DESARROLLO WEB</span></h1>
+                <p style="font-size: 0.7em; color: #ccc;">De consumidores a creadores de soluciones.</p>
+                <p style="font-size: 0.6em; margin-top: 50px; border-top: 1px solid #333; padding-top: 20px;">
+                    <strong>Sebastián Gallardo</strong> & <strong>Manuel Perez</strong>
+                </p>
+            </section>
+
+            <!-- SLIDE 2: EL POR QUÉ -->
+            <section>
+                <h2>¿Por qué la Web?</h2>
+                <p class="fragment fade-up">La web no es solo Facebook o Google.</p>
+                <p class="fragment fade-up admin-me" style="font-size: 1.5em; font-weight: bold;">Es el sistema
+                    operativo del mundo.</p>
+            </section>
+
+            <!-- SLIDE 3: VENTAJAS (Lo que pidió la directora) -->
+            <section>
+                <h3>Ventajas del Software Moderno</h3>
+                <div class="flex-row">
+                    <div class="card fragment fade-up">
+                        <span class="big-icon">🌍</span>
+                        <h4>Escalabilidad</h4>
+                        <p style="font-size: 0.6em;">Un solo código sirve para millones de usuarios simultáneos.</p>
+                    </div>
+                    <div class="card fragment fade-up">
+                        <span class="big-icon">⚡</span>
+                        <h4>Accesibilidad</h4>
+                        <p style="font-size: 0.6em;">Sin instalaciones. Funciona en cualquier dispositivo con navegador.
+                        </p>
+                    </div>
+                    <div class="card fragment fade-up">
+                        <span class="big-icon">🚀</span>
+                        <h4>Impacto</h4>
+                        <p style="font-size: 0.6em;">Solucionas problemas reales y generas valor económico.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 4: TRANSICIÓN A ADMINME -->
+            <section>
+                <p>Para demostrar este poder...</p>
+                <h2 class="fragment">No trajimos teoría.</h2>
+                <h2 class="fragment admin-me">Trajimos una solución real.</h2>
+            </section>
+
+            <!-- SLIDE 5: LA SOLUCIÓN (LOGO) -->
+            <section>
+                <div
+                    style="background: #1a1a1a; padding: 40px; border-radius: 20px; border: 2px solid #7C3AED; display: inline-block; box-shadow: 0 0 50px rgba(124, 58, 237, 0.2);">
+                    <h1 style="margin:0; font-size: 3.5em;">Admin<span class="admin-me">Me</span></h1>
+                    <p style="margin:0; letter-spacing: 2px; font-size: 0.5em;">TU CONTROL, SIMPLIFICADO.</p>
+                </div>
+                <p style="margin-top: 30px;">Plataforma SaaS para el micro-emprendedor venezolano.</p>
+            </section>
+
+            <!-- SLIDE 6: EL PROBLEMA QUE RESUELVE -->
+            <section>
+                <h2>El Problema Local</h2>
+                <p>El 70% de los comercios operan a ciegas.</p>
+                <div style="display: flex; justify-content: center; gap: 50px; margin-top: 40px;">
+                    <div style="opacity: 0.7;">
+                        <h1>📝</h1>
+                        <p style="font-size:0.6em;">Gestión Manual</p>
+                    </div>
+                    <div style="opacity: 0.7;">
+                        <h1>📉</h1>
+                        <p style="font-size:0.6em;">Sin Métricas</p>
+                    </div>
+                    <div style="opacity: 0.7;">
+                        <h1>❌</h1>
+                        <p style="font-size:0.6em;">Pérdidas</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 7: STACK TECNOLÓGICO (TUS BADGES) -->
+            <section>
+                <h3>Ingeniería & Stack</h3>
+                <p style="font-size: 0.6em; margin-bottom: 30px;">Arquitectura MERN desacoplada.</p>
+
+                <!-- BADGES REALES -->
+                <div class="badge-container">
+                    <img
+                        src="https://img.shields.io/badge/FRONTEND-REACT_18-61DAFB?style=for-the-badge&logo=react&logoColor=black">
+                    <img
+                        src="https://img.shields.io/badge/BUILD-VITE-646CFF?style=for-the-badge&logo=vite&logoColor=white">
+                    <img
+                        src="https://img.shields.io/badge/UI-TAILWIND-38B2AC?style=for-the-badge&logo=tailwindcss&logoColor=white">
+                </div>
+                <div class="badge-container">
+                    <img
+                        src="https://img.shields.io/badge/BACKEND-NODE.JS-339933?style=for-the-badge&logo=node.js&logoColor=white">
+                    <img
+                        src="https://img.shields.io/badge/API-EXPRESS-000000?style=for-the-badge&logo=express&logoColor=white">
+                    <img
+                        src="https://img.shields.io/badge/CLOUD-RENDER-46E3B7?style=for-the-badge&logo=render&logoColor=white">
+                </div>
+                <div class="badge-container">
+                    <img
+                        src="https://img.shields.io/badge/DB-POSTGRESQL-336791?style=for-the-badge&logo=postgresql&logoColor=white">
+                    <img
+                        src="https://img.shields.io/badge/BAAS-SUPABASE-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white">
+                </div>
+            </section>
+
+            <!-- SLIDE 8: ARQUITECTURA (TU IMAGEN) -->
+            
+
+            <!-- SLIDE 9: RETOS DE INFRAESTRUCTURA -->
+            <section>
+                <h3>El Desafío de Producción</h3>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; text-align: left;">
+                    <div class="fragment fade-up code-box" style="border-color: #EF4444;">
+                        <p class="error">ERROR: Connection ETIMEDOUT</p>
+                        <p>> Nodemailer intentando conectar a Gmail...</p>
+                        <p>> Puerto 587 bloqueado por Firewall.</p>
+                        <p>> Fallo en verificación de usuario.</p>
+                    </div>
+                    <div class="fragment fade-up code-box" style="border-color: #10B981;">
+                        <p class="highlight">SOLUCIÓN: API Gateway</p>
+                        <p>> Implementación de Abstract API.</p>
+                        <p>> Validación de reputación de dominio.</p>
+                        <p>> Eliminación de dependencia SMTP.</p>
+                        <p>> <span class="highlight">Status: 200 OK</span></p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 10: MODELO DE NEGOCIO (CÓDIGO) -->
+            <section>
+                <h3>Lógica Freemium (Backend)</h3>
+                <p style="font-size: 0.6em;">Middleware de control de límites en el servidor.</p>
+                <div class="code-box">
+                    <pre><code data-trim data-noescape>
+// admin-me-back/middlewares/planLimiter.js
+
+const user = await getUserPlan(id);
+
+// Límite de Ventas Mensuales
+if (ventasMes >= user.limite_ventas_mes) {
+    return res.status(403).json({
+        error: `Has alcanzado el límite de ${user.limite} ventas.`
+    });
+}
+
+next(); // Permitir operación si no excede
+</code></pre>
+                </div>
+            </section>
+
+            <!-- SLIDE 12: CIERRE -->
+            <section>
+                <blockquote style="background: #222; padding: 20px; border-left: 10px solid #7C3AED; font-size: 1.3em;">
+                    "El desarrollo web moderno no es solo escribir código.<br>Es <strong>orquestar servicios</strong> en
+                    la nube."
+                </blockquote>
+            </section>
+
+            <!-- SLIDE 13: QR Y FINAL -->
+            <section>
+                <h1>¿PREGUNTAS?</h1>
+                <!-- QR CODE -->
+                <div style="background: white; padding: 10px; width: 200px; height: 200px; margin: 20px auto;">
+                    <img src="assets/qr.png"
+                        alt="QR Code">
+                </div>
+                <p style="font-size: 0.6em; color: #7C3AED;">admin-me-blue.vercel.app</p>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
+    <script>
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            center: true,
+            hash: true,
+            transition: 'convex', // Transición elegante
+            backgroundTransition: 'fade'
+        });
+    </script>
+
+</body>
+
+</html>
